@@ -16,9 +16,8 @@ class AppRouter {
       initialLocation: RoutesPaths.splashRoute,
       routes: [
         GoRoute(
-          name: RoutesNames.splashRoute,
-          path: RoutesPaths.splashRoute,
-          builder: (context, state) => const HomeView(),
-        )
+            name: RoutesNames.splashRoute,
+            path: RoutesPaths.splashRoute,
+            builder: (context, state) => const HomeView())
       ]);
 }
