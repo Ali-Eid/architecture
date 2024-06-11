@@ -1,0 +1,14 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'failure_model.freezed.dart';
+part 'failure_model.g.dart';
+
+@freezed
+abstract class FailureModel with _$FailureModel {
+  factory FailureModel({
+    @Default('') String message,
+    @Default('') String code,
+  }) = _FailureModel;
+  factory FailureModel.fromJson(Map<String, dynamic> json) =>
+      _$FailureModelFromJson(json);
+}
