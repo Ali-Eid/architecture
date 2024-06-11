@@ -12,3 +12,5 @@ abstract class FailureModel with _$FailureModel {
   factory FailureModel.fromJson(Map<String, dynamic> json) =>
       _$FailureModelFromJson(json);
 }
+
+Map<String, String> defaultError = {'message': "defaultError"};

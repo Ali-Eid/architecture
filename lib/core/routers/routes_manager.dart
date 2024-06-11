@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 
-import '../../features/home/views/home_view.dart';
+import '../../features/home/presentation/views/home_view.dart';
 
 class RoutesNames {
   static const String splashRoute = '/';

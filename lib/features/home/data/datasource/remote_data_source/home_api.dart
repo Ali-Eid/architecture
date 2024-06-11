@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:new_arch/core/constants/endpoints.dart';
 import 'package:retrofit/retrofit.dart';
-import '../../../../core/constants/constants.dart';
-import '../../domain/models/posts_model.dart';
+import '../../../../../core/constants/constants.dart';
+import '../../../domain/models/posts_model.dart';
 part 'home_api.g.dart';
 
 @RestApi(baseUrl: Endpoints.POSTS)
