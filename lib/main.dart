@@ -3,13 +3,15 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'core/app/app.dart';
 import 'core/app/bloc_observer.dart';
+import 'core/app/depndency_injection.dart';
 import 'core/localization/language_manager.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   EasyLocalization.logger.enableBuildModes = [];
-  // await initAppModule();
+  await initAppModule();
+  await initPosts();
   Bloc.observer = MyBlocObserver();
   runApp(EasyLocalization(
       supportedLocales: supportedLocales,
